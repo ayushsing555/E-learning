@@ -202,21 +202,21 @@
         </div>
     </div>
     <script>
-        $(document).ready(function(){
+         $(document).ready(function(){
         $("a").click(function(){
-        $(".video").fadeIn(3000);
-        $(".oneshot").fadeOut(3000);
-        $(".theory div").fadeOut(3000);
+            $(".video").css("display","block");
+        $(".oneshot").css("display","none");
+        $(".theory div").css("display","none");
     });
     $("#one").click(function(){
-        $(".oneshot").fadeIn(3000);
-        $(".video").fadeOut(3000);
-        $(".theory div").fadeOut(3000);
+        $(".video").css("display","none");
+        $(".oneshot").css("display","block");
+        $(".theory div").css("display","none");
     });
     $("#theo").click(function(){
-        $(".theory div").fadeIn(3000);
-        $(".video").fadeOut(3000);
-        $(".oneshot").fadeOut(3000);
+        $(".video").css("display","none");
+        $(".oneshot").css("display","none");
+        $(".theory div").css("display","block");
     });
 });
     </script>
